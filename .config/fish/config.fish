@@ -22,10 +22,7 @@ alias vacuum_time="journalctl --vacuum-time=2weeks"
 
 set -U fish_greeting
 set fish_color_command green
-set -gx EDITOR micro
-set -gx VISUAL micro
-set -gx BROWSER /usr/bin/firefox
-
+set -gx ELECTRON_FORCE_DPI=150
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
